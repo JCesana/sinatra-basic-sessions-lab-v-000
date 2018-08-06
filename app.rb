@@ -4,9 +4,9 @@ require 'pry'
 class App < Sinatra::Base
   
   configure do
-  enable :sessions
-  set :session_secret, "secret"
-end 
+    enable :sessions
+    set :session_secret, "secret"
+  end 
   get '/' do 
     erb :index 
   end 
